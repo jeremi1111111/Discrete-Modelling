@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" spacing="20.0" style="-fx-background-color: navajowhite;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.MDLab3.ElementaryCAController">
+   <children>
+      <ImageView fx:id="generatedImage" fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin></ImageView>
+      <VBox fx:id="controlPanel" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Button fx:id="optionsButton" mnemonicParsing="false" onMouseClicked="#onOptionsButtonClick" style="-fx-background-color: antiquewhite; -fx-border-color: grey; -fx-border-radius: 5;" text="v">
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label text="Cells" />
+                  <TextField fx:id="cellCount" alignment="CENTER" prefWidth="40.0" />
+                  <Label text="Rule" />
+                  <TextField fx:id="ruleNumber" alignment="CENTER" prefWidth="40.0" />
+                  <Button mnemonicParsing="false" onMouseClicked="#onSimulateButtonClick" style="-fx-background-color: antiquewhite; -fx-border-color: grey; -fx-border-radius: 5;" text="Simulate" />
+                  <Button fx:id="saveButton" mnemonicParsing="false" onMouseClicked="#onSaveButtonClick" style="-fx-background-color: antiquewhite; -fx-border-color: grey; -fx-border-radius: 5;" text="Save" />
+               </children>
+            </HBox>
+            <HBox fx:id="optionsBox" alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label text="Iterations" />
+                  <TextField fx:id="iterationCount" prefWidth="40.0" />
+                  <CheckBox fx:id="randomCheck" mnemonicParsing="false" text="Randomize" />
+                  <CheckBox fx:id="BCCheck" mnemonicParsing="false" onAction="#onBCCheckAction" text="Custom boundary conditions" />
+                  <TextField fx:id="BCText" alignment="CENTER" prefWidth="30.0" />
+                  <CheckBox fx:id="animate" mnemonicParsing="false" text="Animate" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" />
+   </padding>
+</VBox>
