@@ -3,6 +3,8 @@ _Forest Fire_ is a JavaFX project made over a concept of [2D CA](../MDLab4).
 
 ## Model of the simulation
 
+[![]](https://github.com/jeremi1111111/Discrete-Modelling/assets/130166969/355aeb21-c068-4575-9048-032655b7e0b9)
+
 ### The basics
 
 (_You're in the great Amazon rainforest.
@@ -48,6 +50,3 @@ How is this possible? The fire has finally come to an end. You're safe._)
 People say, native people living in this part of the forest have possessed the ability to bend fire.
 They learnt how to perform the ancient ritual, which magically makes rocks grow atop burning wood.
 No one knows how this works.
-
-## So, how does this work?
-a short example of what can be done in the program.
