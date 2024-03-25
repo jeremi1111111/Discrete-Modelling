@@ -23,3 +23,6 @@ User selects a preset, number of its copies and general density on the grid,
 as well as a boundary condition to be used on each edge.
 After loading the domain, user can choose animation speed, start simulation,
 or select iteration "by hand".
+
+[![]](https://github.com/jeremi1111111/Discrete-Modelling/assets/130166969/32e4f52e-05c6-4299-af5a-aeeb2b881d75)
+
